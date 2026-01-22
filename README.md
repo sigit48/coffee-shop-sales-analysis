@@ -93,22 +93,31 @@ coffee-shop-sales-analysis/
 ├── analysis.py
 ├── requirements.txt
 └── README.md
+```
+
+---
 
 ## ▶️ How to Run the Analysis
-1. Install dependencies
+
+### 1. Install dependencies
+```bash
 pip install -r requirements.txt
+```
 
-2. Run the analysis script
+### 2. Run the analysis script
+```bash
 python analysis.py
+```
 
+---
 
-The script will generate:
+### The script will generate:
 
-Bar chart: Top-selling menu items by revenue
-Line chart: Daily sales trend
-Bar chart: Weekly sales revenue distribution
+- Bar chart: Top-selling menu items by revenue
+- Line chart: Daily sales trend
+- Bar chart: Weekly sales revenue distribution
 
-
+---
 ## 👤 Author
 
 Sigit Dwiantoro
