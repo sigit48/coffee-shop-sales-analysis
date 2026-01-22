@@ -1,29 +1,91 @@
-# Coffee Shop Sales Analysis (EDA)
+# ☕ Revenue Optimization Analysis for a Coffee Shop  
+**Data-Driven Sales Insights Using Transaction-Level Data**
 
-This project analyzes coffee shop sales transactions to identify top-selling menu items, sales trends, and actionable business insights for promotion strategy and revenue optimization.
+## 📌 Project Overview
+This project analyzes coffee shop sales transaction data to identify **key revenue drivers, peak sales periods, and actionable strategies** that can support **promotion planning and revenue optimization**.
 
-## Business Questions
-1. Which coffee menu contributes the most to revenue?
-2. On which days does sales peak?
-3. What patterns can be used for promotion strategy?
+The analysis is designed from a **business decision-making perspective**, not merely exploratory analysis, simulating how a data analyst supports owners or managers in optimizing sales performance.
 
-## Dataset
-- Source: Coffee shop sales transactions (CSV)
-- File path: `data/coffee_sales.csv`
-- Separator: `;`
+---
 
-> Note: The dataset is included in this repository (see `/data` folder).
+## 🧩 Business Problem
+The coffee shop faces several common operational challenges:
+- Promotions are run without clear data-driven prioritization
+- Management lacks visibility into **which menu items truly drive revenue**
+- Sales fluctuate across days, but **peak opportunities are not systematically leveraged**
 
-## Tools & Skills
-- Python
-- Pandas (data cleaning & analysis)
-- Matplotlib (visualization)
-- EDA (exploratory data analysis)
-- Business insight & recommendations
+**Objective:**  
+Use historical transaction data to identify revenue drivers and translate insights into **clear business actions**.
 
-## Project Structure
+---
+
+## ❓ Key Business Questions
+1. **Which coffee menu items contribute the most to total revenue?**
+2. **On which days do sales peak, and how significant is the difference?**
+3. **What sales patterns can be leveraged for more effective promotion strategies?**
+
+---
+
+## 📊 Dataset
+- **Source:** Coffee shop sales transaction records
+- **Format:** CSV (`;` separated)
+- **Location:** `/data/coffee_sales.csv`
+- **Granularity:** Transaction-level data
+
+> The dataset is included in this repository for reproducibility.
+
+---
+
+## 🛠 Tools & Skills
+- **Python**
+- **Pandas** – data cleaning and aggregation
+- **Matplotlib** – data visualization
+- **Exploratory Data Analysis (EDA)**
+- **Business insight translation & recommendation**
+
+---
+
+## 🔍 Analytical Approach
+
+### 1. Data Preparation
+- Validated column structure and data types
+- Removed irrelevant fields (e.g., payment card identifiers)
+- Parsed date and datetime fields
+- Standardized menu item naming
+- Handled missing and inconsistent values
+
+### 2. Revenue Analysis
+- Aggregated total revenue by menu item
+- Identified **top-performing products** based on contribution share
+
+### 3. Temporal Analysis
+- Analyzed **daily sales trends**
+- Compared revenue performance by **day of the week**
+- Identified peak vs non-peak sales periods
+
+---
+
+## 📈 Key Insights
+- A small subset of menu items accounts for a **disproportionate share of total revenue**, indicating strong product concentration
+- Sales peak consistently on specific days, generating **significantly higher revenue compared to the weekly average**
+- Certain low-performing menu items contribute marginal revenue while increasing operational complexity
+
+---
+
+## 💡 Business Recommendations
+Based on the analysis:
+- **Prioritize promotional campaigns** for top-revenue menu items rather than distributing discounts evenly
+- **Schedule marketing activities** on peak sales days to maximize promotional ROI
+- Apply **bundling strategies** combining high-performing and low-performing items to increase average transaction value
+- Re-evaluate underperforming menu items for cost control or menu optimization
+
+These actions aim to **increase revenue efficiency without increasing operational cost**.
+
+---
+
+## 📂 Project Structure
 ```text
-coffee-sales-analysis/
+coffee-shop-sales-analysis/
 │
 ├── data/
 │   └── coffee_sales.csv
@@ -31,54 +93,26 @@ coffee-sales-analysis/
 ├── analysis.py
 ├── requirements.txt
 └── README.md
-Key Steps
-Load and validate dataset columns
 
-Data cleaning:
-
-Remove irrelevant columns (e.g., card)
-
-Parse date and datetime
-
-Standardize menu names
-
-Handle missing/invalid values
-
-Analysis:
-
-Top-selling coffee menu by total revenue
-
-Daily sales trend
-
-Weekly sales pattern
-
-Outputs
-The script produces:
-
-Bar chart: Top-selling menu items by total revenue
-
-Line chart: Daily sales trend
-
-Bar chart: Weekly sales pattern (revenue by day)
-
-How to Run
-1) Install dependencies
-bash
-Copy code
+▶️ How to Run the Analysis
+1. Install dependencies
 pip install -r requirements.txt
-2) Run the analysis
-bash
-Copy code
+
+2. Run the analysis script
 python analysis.py
-Business Recommendations (Example)
-Prioritize promotions for top-performing menu items
 
-Schedule marketing campaigns on peak sales days
 
-Use bundling strategy to increase average transaction value
+The script will generate:
 
-Author
+Bar chart: Top-selling menu items by revenue
+Line chart: Daily sales trend
+Bar chart: Weekly sales revenue distribution
+
+
+👤 Author
+
 Sigit Dwiantoro
+Data Analyst (Business-Oriented)
 
 LinkedIn: https://www.linkedin.com/in/sigit-dwiantoro-392872227
 
