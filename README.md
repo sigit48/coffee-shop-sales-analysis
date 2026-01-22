@@ -94,7 +94,7 @@ coffee-shop-sales-analysis/
 ├── requirements.txt
 └── README.md
 
-▶️ How to Run the Analysis
+## ▶️ How to Run the Analysis
 1. Install dependencies
 pip install -r requirements.txt
 
@@ -109,7 +109,7 @@ Line chart: Daily sales trend
 Bar chart: Weekly sales revenue distribution
 
 
-👤 Author
+## 👤 Author
 
 Sigit Dwiantoro
 Data Analyst (Business-Oriented)
